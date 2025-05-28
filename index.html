@@ -1,32 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Math Club | Home</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCSC Society of Women in Mathematics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>UCSC Society of Women in Mathematics</h1>
-    </div>
-    <nav>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="join.html">Join Us</a>
-      </div>
-      <div class="search-container">
-        <input type="search" placeholder="Search...">
-      </div>
-    </nav>
-  </header>
-  <main>
-    <h2>Welcome!</h2>
-    <p>We are a community of math enthusiasts empowering women in mathematics through collaboration, events, and support.</p>
-  </main>
-  <script src="search.js"></script>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">UCSC SWiM</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="join.html" class="nav-link">Join Us</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">UCSC Society of Women in Mathematics</h1>
+                    <p class="hero-description">
+                        Empowering women in mathematics through community, mentorship, and academic excellence.
+                    </p>
+                    <div class="hero-buttons">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section">
+            <div class="container">
+                <img src="assets/mchenry_cmra1.jpg" alt="Natural Sciences 2 Building at UCSC" style="display: block; max-width: 100%; height: auto; margin: 0 auto;">
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section class="mission bg-light">
+            <div class="container">
+                <div class="mission-content">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p class="mission-text">
+                        The Society of Women in Mathematics at UC Santa Cruz is dedicated to fostering a supportive community for
+                        women and gender minorities in mathematics. We aim to increase representation, provide mentorship, and
+                        create opportunities for academic and professional growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">👥</div>
+                            <h3 class="feature-title">Community</h3>
+                        </div>
+                        <p class="feature-description">
+                            Connect with peers, faculty, and professionals in mathematics through regular meetings and social events.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">🎓</div>
+                            <h3 class="feature-title">Education</h3>
+                        </div>
+                        <p class="feature-description">
+                            Access workshops, study groups, and research opportunities to enhance your mathematical knowledge.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">📅</div>
+                            <h3 class="feature-title">Events</h3>
+                        </div>
+                        <p class="feature-description">
+                            Participate in conferences, guest lectures, and networking events with mathematicians from around the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to join our community?</h2>
+                    <p class="cta-description">
+                        Become a member today and be part of a supportive network of mathematicians.
+                    </p>
+                    <a href="join.html" class="btn btn-primary">Join SWiM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-connect">
+                        <h3 class="footer-title">Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/ucsc_women_in_math/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UCSC Society of Women in Mathematics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>

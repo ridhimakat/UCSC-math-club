@@ -1,32 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Math Club | Resources</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - UCSC Society of Women in Mathematics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>UCSC Society of Women in Mathematics</h1>
-    </div>
-    <nav>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="join.html">Join Us</a>
-      </div>
-      <div class="search-container">
-        <input type="search" placeholder="Search...">
-      </div>
-    </nav>
-  </header>
-  <main>
-    <h2>Resources</h2>
-    <p>Access our collection of helpful resources and materials.</p>
-  </main>
-  <script src="search.js"></script>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">UCSC SWiM</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="resources.html" class="nav-link active">Resources</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="join.html" class="nav-link">Join Us</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Resources</h1>
+                <p class="page-description">
+                    Explore our curated collection of resources for women in mathematics.
+                </p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="resources-grid">
+                    <!-- Academic Resources -->
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">📚</div>
+                            <h3 class="feature-title">Academic Resources</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="#">Mathematics Study Guides</a></li>
+                            <li><a href="#">Research Opportunities</a></li>
+                            <li><a href="#">Graduate School Preparation</a></li>
+                            <li><a href="#">Academic Writing Resources</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Professional Development -->
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">💼</div>
+                            <h3 class="feature-title">Professional Development</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="#">Career Planning Resources</a></li>
+                            <li><a href="#">Industry Connections</a></li>
+                            <li><a href="#">Resume and CV Templates</a></li>
+                            <li><a href="#">Interview Preparation</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Mentorship -->
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">🤝</div>
+                            <h3 class="feature-title">Mentorship</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="#">Mentorship Program Guidelines</a></li>
+                            <li><a href="#">Faculty Mentors Directory</a></li>
+                            <li><a href="#">Peer Mentoring Resources</a></li>
+                            <li><a href="#">Mentorship Success Stories</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Community Support -->
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">👥</div>
+                            <h3 class="feature-title">Community Support</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="#">Student Organizations</a></li>
+                            <li><a href="#">Support Groups</a></li>
+                            <li><a href="#">Wellness Resources</a></li>
+                            <li><a href="#">Community Events Calendar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Resources -->
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Additional Resources</h2>
+                <div class="resources-grid">
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">🔍</div>
+                            <h3 class="feature-title">External Links</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="#">Association for Women in Mathematics</a></li>
+                            <li><a href="#">Society for Industrial and Applied Mathematics</a></li>
+                            <li><a href="#">American Mathematical Society</a></li>
+                            <li><a href="#">Mathematical Association of America</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">📱</div>
+                            <h3 class="feature-title">Digital Resources</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="#">Online Learning Platforms</a></li>
+                            <li><a href="#">Mathematics Software Tools</a></li>
+                            <li><a href="#">Digital Libraries</a></li>
+                            <li><a href="#">Research Databases</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-connect">
+                        <h3 class="footer-title">Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/ucsc_women_in_math/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UCSC Society of Women in Mathematics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
